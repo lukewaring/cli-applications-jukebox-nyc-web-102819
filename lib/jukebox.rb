@@ -33,8 +33,8 @@ end
 # end
 
 def list(array)
-  puts array.each_with_index do |item, index|
-    item 
+  array.each_with_index do |item, index|
+    puts `index. item` 
   end
 end
 
