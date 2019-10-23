@@ -57,6 +57,8 @@ def run(command)
       list(songs)
     end
     
+    break
+    
   end
   
   if user_response == "exit"
