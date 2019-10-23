@@ -45,19 +45,19 @@ def run(songs)
   user_response = ""
   while user_response
     puts "Please enter a command:"
-    user_response = gets.strip  
+    user_response = gets.strip
     case user_response
-      when 'list'
-        list(songs)
-      when 'play'
+      when "help"
+        help
+      when "play"
         play(songs)
-      when 'help'
-        help 
-      when 'exit'
+      when "list"
+        list(songs)
+      when "exit"
         exit_jukebox
-        break 
-      else 
-        help 
+        break
+      else
+        help
     end 
   end 
 end
