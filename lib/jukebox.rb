@@ -48,4 +48,16 @@ def run(command)
   if user_response == "exit"
     exit_jukebox
   end
+  
+  if user_response == "help"
+    help
+  end
+  
+  if user_response == "list"
+    list
+  end
+  
+  if user_response == "play"
+    play
+  end
 end
