@@ -41,11 +41,12 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(command) 
+def run(command)
   puts "Please enter a command:"
   user_response = gets.strip
   
   while user_response != "exit" do
+    
     if user_response == "help"
       help
     end
@@ -55,9 +56,11 @@ def run(command)
     if user_response == "list"
       list(songs)
     end
-    if user_response == "exit"
-      break
-    end
+    
+  end
+  
+  if user_response == "exit"
     exit_jukebox
   end
+  
 end
