@@ -45,19 +45,5 @@ def run(command)
   puts "Please enter a command:"
   user_response = gets.strip
   
-  if user_response == "exit"
-    exit_jukebox
-  end
   
-  if user_response == "help"
-    help
-  end
-  
-  if user_response == "list"
-    list(songs
-  end
-  
-  if user_response == "play"
-    play(songs)
-  end
 end
