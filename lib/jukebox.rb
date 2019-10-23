@@ -34,7 +34,7 @@ end
 
 def list(songs)
   puts songs.each_with_index do |item, index|
-    `(index+1). item` 
+    item 
   end
 end
 
