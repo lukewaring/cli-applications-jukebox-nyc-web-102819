@@ -41,37 +41,12 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-# def run(command)
-#   puts "Please enter a command:"
-#   user_response = gets.strip
-  
-#   #while user_response != "exit" do
-    
-#     if user_response == "help"
-#       help
-#     end
-#     if user_response == "play"
-#       list(songs)
-#       play(songs)
-#     end
-#     if user_response == "list"
-#       list(songs)
-#     end
-#     if user_response == "exit"
-#     exit_jukebox
-#     #break
-#     end
-    
-#   #end
-  
-# end
-
 def run(songs)
-  command = ""
-  while command
+  user_response = ""
+  while user_response
     puts "Please enter a command:"
-    command = gets.strip  
-    case command 
+    user_response = gets.strip  
+    case user_response
       when 'list'
         list(songs)
       when 'play'
@@ -86,5 +61,4 @@ def run(songs)
         help 
     end 
   end 
-end 
-  
+end
