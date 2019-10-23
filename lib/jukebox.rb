@@ -37,9 +37,9 @@ def list(songs)
   end
 end
 
-# def exit_jukebox
-
-# end
+def exit_jukebox
+  puts "Goodbye"
+end
 
 # def run 
 
