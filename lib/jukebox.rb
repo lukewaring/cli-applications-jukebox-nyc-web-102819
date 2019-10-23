@@ -32,8 +32,8 @@ end
 #   end
 # end
 
-def list(songs)
-  puts songs.each_with_index do |item, index|
+def list(array)
+  puts array.each_with_index do |item, index|
     item 
   end
 end
