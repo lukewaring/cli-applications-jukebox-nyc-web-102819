@@ -41,27 +41,27 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run(command)
-  puts "Please enter a command:"
-  user_response = gets.strip
+# def run(command)
+#   puts "Please enter a command:"
+#   user_response = gets.strip
   
-  #while user_response != "exit" do
+#   #while user_response != "exit" do
     
-    if user_response == "help"
-      help
-    end
-    if user_response == "play"
-      list(songs)
-      play(songs)
-    end
-    if user_response == "list"
-      list(songs)
-    end
-    if user_response == "exit"
-    exit_jukebox
-    #break
-    end
+#     if user_response == "help"
+#       help
+#     end
+#     if user_response == "play"
+#       list(songs)
+#       play(songs)
+#     end
+#     if user_response == "list"
+#       list(songs)
+#     end
+#     if user_response == "exit"
+#     exit_jukebox
+#     #break
+#     end
     
-  #end
+#   #end
   
-end
+# end
