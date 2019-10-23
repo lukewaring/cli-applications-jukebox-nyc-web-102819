@@ -45,7 +45,7 @@ def run(command)
   puts "Please enter a command:"
   user_response = gets.strip
   
-  while user_response != "exit" do
+  #while user_response != "exit" do
     
     if user_response == "help"
       help
@@ -59,9 +59,8 @@ def run(command)
     end
     if user_response == "exit"
     exit_jukebox
-    break
     end
     
-  end
+  #end
   
 end
