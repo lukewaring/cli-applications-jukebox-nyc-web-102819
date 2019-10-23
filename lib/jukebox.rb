@@ -42,7 +42,7 @@ def exit_jukebox
 end
 
 def run(songs)
-  user_response = ""
+  user_response = nil
   while user_response
     puts "Please enter a command:"
     user_response = gets.strip  
