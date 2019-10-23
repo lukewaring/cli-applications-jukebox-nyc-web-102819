@@ -46,9 +46,18 @@ def run(command)
   user_response = gets.strip
   
   while user_response != "exit" do
+    if user_response == "help"
+      help
+    end
     if user_response == "play"
       play(songs)
     end
-    if user_response == ""
+    if user_response == "list"
+      list(songs)
+    end
+    if user_response == "exit"
+      exit_jukebox
+      break
+    end
   end
 end
