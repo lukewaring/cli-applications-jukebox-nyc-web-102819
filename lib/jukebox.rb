@@ -51,6 +51,7 @@ def run(command)
       help
     end
     if user_response == "play"
+      list(songs)
       play(songs)
     end
     if user_response == "list"
