@@ -45,5 +45,7 @@ def run(command)
   puts "Please enter a command:"
   user_response = gets.strip
   
-  
+  if user_response == "exit"
+    exit_jukebox
+  end
 end
