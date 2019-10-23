@@ -67,14 +67,13 @@ end
 # end
 
 def run(songs)
-  #help
-  command = "" 
-  while command  
-  puts "Please enter a command:"
-  command = gets.strip  
-  case command 
-    when 'list'
-      list(songs)
+  command = ""
+  while command
+    puts "Please enter a command:"
+    command = gets.strip  
+    case command 
+      when 'list'
+        list(songs)
       when 'play'
         list(songs)
         play(songs)
@@ -88,4 +87,4 @@ def run(songs)
       end 
     end 
   end 
-  run(songs)
+  
