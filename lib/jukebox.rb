@@ -59,6 +59,7 @@ def run(command)
     end
     if user_response == "exit"
     exit_jukebox
+    #break
     end
     
   #end
