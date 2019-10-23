@@ -33,7 +33,7 @@ end
 # end
 
 def list(songs)
-  songs.each_with_index do |item, index|
+  puts songs.each_with_index do |item, index|
     `(index+1). item` 
   end
 end
