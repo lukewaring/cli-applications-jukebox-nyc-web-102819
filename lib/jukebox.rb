@@ -22,16 +22,13 @@ def play(songs)
   puts "Please enter a song name or number:"
   user_response = gets.strip
   
-  song_numbers = songs.each_with_index do |item, index|
-     return index+1
+  if (1..9).to_a.include?(user_response.to_i)
+    puts "Playing #songs[user_response.to_i - 1]"
+  elsif songs.include?(user_response)
+    puts "Playing #{user_response}"
+  else 
+    puts "Invalid input, please try again"
   end
-  
-  song_names = songs.each_with_index do |item, index|
-    return item
-  end
-  
-  
-  
 end
 
 def list(songs)
