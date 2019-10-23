@@ -45,5 +45,10 @@ def run(command)
   puts "Please enter a command:"
   user_response = gets.strip
   
-  
+  while user_response != "exit" do
+    if user_response == "play"
+      play(songs)
+    end
+    if user_response == ""
+  end
 end
