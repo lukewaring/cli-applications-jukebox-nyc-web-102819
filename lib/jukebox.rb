@@ -54,10 +54,10 @@ def run(command)
   end
   
   if user_response == "list"
-    list
+    list(songs
   end
   
   if user_response == "play"
-    play
+    play(songs)
   end
 end
