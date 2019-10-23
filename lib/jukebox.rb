@@ -23,8 +23,14 @@ def play(songs)
   user_response = gets.strip
   
   song_numbers = songs.each_with_index do |item, index|
-    index+1
+     return index+1
   end
+  
+  song_names = songs.each_with_index do |item, index|
+    return item
+  end
+  
+  
   
 end
 
