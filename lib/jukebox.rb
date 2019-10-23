@@ -33,7 +33,9 @@ def play(songs)
 end
 
 def list(songs)
-  puts songs.each_with_index
+  songs.each_with_index do |item, index|
+    `(index+1). item` 
+  end
 end
 
 # def exit_jukebox
