@@ -57,13 +57,11 @@ def run(command)
     if user_response == "list"
       list(songs)
     end
-    
-    break
-    
-  end
-  
-  if user_response == "exit"
+    if user_response == "exit"
     exit_jukebox
+    break
+    end
+    
   end
   
 end
